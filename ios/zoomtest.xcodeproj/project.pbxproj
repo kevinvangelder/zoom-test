@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,8 @@
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		5A8B56719D4848F3A6B60F74 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FEFA6D6724CE8A65D79B5 /* noop-file.swift */; };
 		96905EF65AED1B983A6B3ABC /* libPods-zoomtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-zoomtest.a */; };
-		B056F182298D93A800E69E6C /* ZoomVideoSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B056F17F298D90AC00E69E6C /* ZoomVideoSDK.xcframework */; };
+		B0FAEA102996FAC4000D67B9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FAEA0F2996FAC4000D67B9 /* VideoToolbox.framework */; };
+		B0FAEA122996FAD2000D67B9 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FAEA112996FAD2000D67B9 /* CoreAudio.framework */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,10 @@
 		A92FEFA6D6724CE8A65D79B5 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "zoomtest/noop-file.swift"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = zoomtest/SplashScreen.storyboard; sourceTree = "<group>"; };
 		B056F17F298D90AC00E69E6C /* ZoomVideoSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZoomVideoSDK.xcframework; path = lib/ZoomVideoSDK.xcframework; sourceTree = "<group>"; };
+		B0FAEA082996FAB6000D67B9 /* ZoomVideoSDKScreenShare.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZoomVideoSDKScreenShare.xcframework; path = lib/ZoomVideoSDKScreenShare.xcframework; sourceTree = "<group>"; };
+		B0FAEA092996FAB7000D67B9 /* zoomcml.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = zoomcml.xcframework; path = lib/zoomcml.xcframework; sourceTree = "<group>"; };
+		B0FAEA0F2996FAC4000D67B9 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		B0FAEA112996FAD2000D67B9 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-zoomtest/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
@@ -42,7 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B056F182298D93A800E69E6C /* ZoomVideoSDK.xcframework in Frameworks */,
+				B0FAEA122996FAD2000D67B9 /* CoreAudio.framework in Frameworks */,
+				B0FAEA102996FAC4000D67B9 /* VideoToolbox.framework in Frameworks */,
 				96905EF65AED1B983A6B3ABC /* libPods-zoomtest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +75,10 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0FAEA112996FAD2000D67B9 /* CoreAudio.framework */,
+				B0FAEA0F2996FAC4000D67B9 /* VideoToolbox.framework */,
+				B0FAEA092996FAB7000D67B9 /* zoomcml.xcframework */,
+				B0FAEA082996FAB6000D67B9 /* ZoomVideoSDKScreenShare.xcframework */,
 				B056F17F298D90AC00E69E6C /* ZoomVideoSDK.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-zoomtest.a */,
@@ -154,6 +164,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
+				6DCC7C11DF4ABDAC156BB19B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,7 +189,7 @@
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "zoomtest" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -245,24 +256,34 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6DCC7C11DF4ABDAC156BB19B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zoomtest/Pods-zoomtest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zoomtest/Pods-zoomtest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zoomtest/Pods-zoomtest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-zoomtest/Pods-zoomtest-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/expo-dev-launcher/EXDevLauncher.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/expo-dev-menu/EXDevMenu.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zoomtest/Pods-zoomtest-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXDevLauncher.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXDevMenu.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zoomtest/Pods-zoomtest-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -314,6 +335,7 @@
 				CODE_SIGN_ENTITLEMENTS = zoomtest/zoomtest.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
@@ -347,6 +369,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = zoomtest/zoomtest.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = zoomtest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
